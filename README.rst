@@ -34,6 +34,27 @@ Finally, install the luma libraries using::
 
   $ sudo -H pip install -e .
 
+### Install instructions on Ubuntu 22.04 / Raspberry 4 
+
+  $ sudo usermod -a -G i2c,spi,gpio $USER
+  $ sudo apt install python3-dev python3-pip python3-numpy libfreetype-dev libjpeg-dev build-essential
+  $ sudo apt install libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libportmidi-dev
+
+  $ mkdir -p ~/.venvs
+  $ python3 -m venv ~/.venvs/luma
+  
+Log out and in again and clone this repository::
+
+  $ git clone https://github.com/rm-hull/luma.examples.git
+  $ cd luma.examples
+
+Finally, install the luma libraries using::
+
+  $ ~/.venvs/luma/bin/python3 -m pip install -e .
+
+#Run the examples 
+  $ cd examples/
+  $ ~/.venvs/luma/bin/python3 sys_info_extended.py  
 
 Running the examples
 --------------------
