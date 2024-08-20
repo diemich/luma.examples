@@ -60,7 +60,7 @@ Run the examples
 ---------------------
   cd examples/
 
-  ~/.venvs/luma/bin/python3.11 -m pip install psutil 
+  ~/.venvs/luma/bin/python3 -m pip install psutil 
 
   ~/.venvs/luma/bin/python3 sys_info_extended.py  
 
